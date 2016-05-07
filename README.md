@@ -4,15 +4,15 @@
 ## Installation
 
 ```sh
-$ npm install --save d-2-js
+$ npm install --save d2js
 ```
 
 ## Usage
 
 ```js
-var d2Js = require('d-2-js');
+var d2Js = require('d2js');
 
-d2Js('Rainbow');
+
 ```
 ## License
 
