@@ -1,7 +1,7 @@
 import I18nFileAccessor from '../../lib/d2i/i18n-file-accessor';
 
 describe('I18nFileAccessor', function () {
-  var filename = 'test//fixtures/d2i/i18n_fr.d2i';
+  var filename = 'test/fixtures/d2i/i18n_fr.d2i';
   var d2i = new I18nFileAccessor(filename);
   d2i.init();
   
