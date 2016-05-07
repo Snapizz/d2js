@@ -4,6 +4,7 @@ describe('I18nFileAccessor', function () {
   var filename = 'test//fixtures/d2i/i18n_fr.d2i';
   var d2i = new I18nFileAccessor(filename);
   d2i.init();
+  
   it('should have filename!', function () {
     expect(d2i.filename).toEqual(filename);
   });
@@ -28,5 +29,29 @@ describe('I18nFileAccessor', function () {
   it('should have _textCount!', function () {
     expect(d2i._textCount).toBeDefined();
     expect(d2i._textCount).toBeGreaterThan(0);
+  });
+  it('should override id!', function () {
+    expect(d2i.overrideId).toBeDefined();
+  });
+  it('should get order index!', function () {
+    expect(d2i.getOrderIndex).toBeDefined();
+  });
+  it('should get text!', function () {
+    expect(d2i.getText).toBeDefined();
+  });
+  it('should get undiacritical text!', function () {
+    expect(d2i.getUnDiacriticalText).toBeDefined();
+  });
+  it('should verify if text exists!', function () {
+    expect(d2i.hasText).toBeDefined();
+  });
+  it('should get named text!', function () {
+    expect(d2i.getNamedText).toBeDefined();
+  });
+  it('should verify if named text exists!', function () {
+    expect(d2i.hasNamedText).toBeDefined();
+  });
+  it('should use direct buffer!', function () {
+    expect(d2i.useDirectBuffer).toBeDefined();
   });
 });
