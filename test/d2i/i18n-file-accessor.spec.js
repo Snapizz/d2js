@@ -4,7 +4,6 @@ describe('I18nFileAccessor', function () {
   var filename = 'test/fixtures/d2i/i18n_fr.d2i';
   var d2i = new I18nFileAccessor(filename);
   d2i.init();
-  
   it('should have filename!', function () {
     expect(d2i.filename).toEqual(filename);
   });
