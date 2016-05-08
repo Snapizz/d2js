@@ -12,8 +12,8 @@ $ npm install --save d2js
 ```js
 var d2Js = require('d2js');
 
-
 ```
+for now, check test to know how it works
 ## License
 
 MIT © [Snapiz]()
