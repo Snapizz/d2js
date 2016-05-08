@@ -25,5 +25,5 @@ MIT © [Snapiz]()
 [travis-url]: https://travis-ci.org/Snapizz/d2js
 [daviddm-image]: https://david-dm.org/Snapizz/d2js.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/Snapizz/d2js
-[coveralls-image]: https://coveralls.io/repos/Snapizz/d2js/badge.svg
-[coveralls-url]: https://coveralls.io/r/Snapizz/d2js
+[coveralls-image]: https://coveralls.io/repos/github/Snapizz/d2js/badge.svg
+[coveralls-url]: https://coveralls.io/github/Snapizz/d2js
