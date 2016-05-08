@@ -1,8 +1,8 @@
 {
   "name": "d2js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "common lib for dofus 2.0",
-  "homepage": "",
+  "homepage": "https://github.com/Snapizz/d2js#readme",
   "author": {
     "name": "Snapiz",
     "email": "snapizz97@gmail.com",
@@ -46,7 +46,10 @@
       "mocha": false
     }
   },
-  "repository": "Snapizz97/d2js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snapizz/d2js.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
