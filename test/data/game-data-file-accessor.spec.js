@@ -1,25 +1,24 @@
-import GameDataFileAccessor from '../../lib/data/game-data-file-accessor';
-import I18nFileAccessor from '../../lib/data/i18n-file-accessor';
+import {D2i, D2p} from '../../lib/';
 
-describe('GameDataFileAccessor', function () {
+describe('D2p', function () {
   var filename = 'test/fixtures/data/Mounts.d2o';
-  GameDataFileAccessor.init(filename);
+  D2p.init(filename);
   it('should have objects!', function () {
-    expect(GameDataFileAccessor.counter).toBeGreaterThan(0);
+    expect(D2p.counter).toBeGreaterThan(0);
   });
   it('should get object!', function () {
-    var mount = GameDataFileAccessor.getObject(41);
+    var mount = D2p.getObject(41);
     expect(mount).toBeDefined();
     expect(mount.nameId).toEqual(59093);
   });
   it('should get objects!', function () {
-    var mounts = GameDataFileAccessor.getObjects(null, 25);
+    var mounts = D2p.getObjects(null, 25);
     expect(mounts.length).toEqual(25);
     expect(mounts[24].id).toEqual(41);
     expect(mounts[24].nameId).toEqual(59093);
   });
   it('should map!', function () {
-    var mounts = GameDataFileAccessor.map((e) => I18nFileAccessor.getText(e.nameId));
+    var mounts = D2p.map((e) => D2i.getText(e.nameId));
     expect(mounts[24]).toEqual('Dragodinde Amande et Pourpre');
   });
 });
