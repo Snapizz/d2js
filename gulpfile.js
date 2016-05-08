@@ -75,5 +75,10 @@ gulp.task('clean', function () {
   return del('dist');
 });
 
-gulp.task('prepublish', ['nsp', 'babel']);
-gulp.task('default', ['static', 'test', 'coveralls']);
+gulp.task('definitionTyped', ['clean'], function () {
+  return gulp.src('lib/**/*.d.ts')
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('prepublish', ['nsp', 'babel', 'definitionTyped']);
+gulp.task('default', ['static', 'test']);
