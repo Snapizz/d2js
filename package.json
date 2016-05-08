@@ -46,7 +46,7 @@
       "mocha": false
     }
   },
-  "repository": "Snapizz97/d-2-js",
+  "repository": "Snapizz97/d2js",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
