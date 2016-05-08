@@ -12,8 +12,8 @@ describe('GameDataFileAccessor', function () {
     expect(mount.nameId).toEqual(59093);
   });
   it('should get objects!', function () {
-    var mounts = GameDataFileAccessor.getObjects();
-    expect(mounts.length).toBeGreaterThan(0);
+    var mounts = GameDataFileAccessor.getObjects(null, 25);
+    expect(mounts.length).toEqual(25);
     expect(mounts[24].id).toEqual(41);
     expect(mounts[24].nameId).toEqual(59093);
   });
