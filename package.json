@@ -11,7 +11,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/d2js.js",
   "keywords": [
     "dofus",
     "lib",
