@@ -1,8 +1,8 @@
-import GameDataFileAccessor from '../../lib/d2p/game-data-file-accessor';
-import I18nFileAccessor from '../../lib/d2i/i18n-file-accessor';
+import GameDataFileAccessor from '../../lib/data/game-data-file-accessor';
+import I18nFileAccessor from '../../lib/data/i18n-file-accessor';
 
 describe('GameDataFileAccessor', function () {
-  var filename = 'test/fixtures/d2p/Mounts.d2o';
+  var filename = 'test/fixtures/data/Mounts.d2o';
   GameDataFileAccessor.init(filename);
   it('should have objects!', function () {
     expect(GameDataFileAccessor.counter).toBeGreaterThan(0);
