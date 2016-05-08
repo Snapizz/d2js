@@ -49,4 +49,8 @@ describe('I18nFileAccessor', function () {
   it('should use direct buffer!', function () {
     expect(I18nFileAccessor.useDirectBuffer).toBeDefined();
   });
+  it('should get texts!', function () {
+    expect(I18nFileAccessor.getTexts(null, 5).length).toEqual(5);
+    expect(I18nFileAccessor.getTexts((e) => e.text.indexOf('Dragodinde') > -1 && e.text.length < 40, 1)[0].text.indexOf('Dragodinde')).not.toEqual(-1);
+  });
 });
