@@ -1,6 +1,6 @@
 {
   "name": "d2js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "common lib for dofus 2.0",
   "homepage": "https://github.com/Snapizz/d2js#readme",
   "author": {
@@ -11,7 +11,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/d2js.js",
   "keywords": [
     "dofus",
     "lib",
