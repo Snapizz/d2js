@@ -1,4 +1,4 @@
-import {D2i, D2p} from '../../lib/';
+import {D2i, D2p} from '../../lib/data';
 
 describe('D2p', function () {
   var filename = 'test/fixtures/data/Mounts.d2o';

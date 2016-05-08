@@ -1,4 +1,4 @@
-import {D2i} from '../../lib/';
+import {D2i} from '../../lib/data';
 
 describe('D2i', function () {
   var filename = 'test/fixtures/data/i18n_fr.d2i';
