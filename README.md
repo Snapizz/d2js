@@ -10,8 +10,10 @@ $ npm install --save d2js
 ## Usage
 
 ```js
-import {D2I, D2P} from 'd2js';
-// or var d2js = require('d2js') d2js.D2I ...
+import {D2I, D2P} from 'd2js'
+// or var d2js = require('d2js')
+d2js.D2I.init('file.d2i') // I18nFileAccessor
+d2js.D2P.init('file.d2o') // GameDataFileAccessor
 
 ```
 ## Classes
