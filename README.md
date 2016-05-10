@@ -10,7 +10,8 @@ $ npm install --save d2js
 ## Usage
 
 ```js
-var d2Js = require('d2js');
+import {D2I, D2P} from 'd2js';
+// or var d2js = require('d2js') d2js.D2I ...
 
 ```
 ## Classes
