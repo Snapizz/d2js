@@ -24,9 +24,6 @@ var d2Js = require('d2js');
 
 <dl>
 <dt><a href="#name">name</a></dt>
-<dd><p>return {string}</p>
-</dd>
-<dt><a href="#name">name</a></dt>
 <dd></dd>
 <dt><a href="#counter">counter</a></dt>
 <dd><p>Getter for counter</p>
@@ -102,14 +99,6 @@ D2p reader
 return {string}
 
 **Kind**: global variable  
-<a name="name"></a>
-
-## name
-**Kind**: global variable  
-
-| Param | Type |
-| --- | --- |
-| value | <code>string</code> | 
 
 <a name="counter"></a>
 
