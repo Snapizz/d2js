@@ -18,7 +18,7 @@ describe('D2P', function () {
     expect(mounts[24].nameId).toEqual(59093);
   });
   it('should map!', function () {
-    var mounts = D2P.map((e) => D2I.getText(e.nameId));
+    var mounts = D2P.map((e) => D2I.getText('fr', e.nameId));
     expect(mounts[24]).toEqual('Dragodinde Amande et Pourpre');
   });
 });
