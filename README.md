@@ -126,10 +126,14 @@ map item from getObjects
 
 <a name="init"></a>
 
-## init()
+## init(filename)
 Initalize I18nFileAccessor and read file
 
 **Kind**: global function  
+
+| Param | Description |
+| --- | --- |
+| filename | file path |
 <a name="getOrderIndex"></a>
 
 ## getOrderIndex(idx1) ⇒ <code>number</code>
