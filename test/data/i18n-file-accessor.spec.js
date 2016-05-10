@@ -1,8 +1,7 @@
 import {D2I} from '../../lib/data';
 
 describe('D2I', function () {
-  D2I.register({key: 'fr', path: 'test/fixtures/data/i18n_fr.d2i'});
-  D2I.register({key: 'en', path: 'test/fixtures/data/i18n_en.d2i'});
+  D2I.register({key: 'fr', path: 'test/fixtures/data/i18n_fr.d2i'}, {key: 'en', path: 'test/fixtures/data/i18n_en.d2i'});
   it('should have _stream!', function () {
     expect(D2I._container['fr']._stream).toBeDefined();
     expect(D2I._container['en']._stream).toBeDefined();
