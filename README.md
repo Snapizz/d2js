@@ -18,6 +18,8 @@ var d2Js = require('d2js');
 <dl>
 <dt><a href="#GameDataFileAccessor">GameDataFileAccessor</a></dt>
 <dd></dd>
+<dt><a href="#I18nFileAccessor">I18nFileAccessor</a></dt>
+<dd></dd>
 </dl>
 
 <a name="GameDataFileAccessor"></a>
@@ -112,6 +114,12 @@ map item from getObjects
 | Param | Type |
 | --- | --- |
 | cb | <code>function</code> | 
+
+<a name="I18nFileAccessor"></a>
+
+## I18nFileAccessor
+**Kind**: global class  
+**Export**:   
 
 <a name="init"></a>
 
