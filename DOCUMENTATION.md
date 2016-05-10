@@ -1,21 +1,3 @@
-# d2js [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> common lib for dofus 2.0
-
-## Installation
-
-```sh
-$ npm install --save d2js
-```
-
-## Usage
-
-```js
-import {D2I, D2P} from 'd2js'
-// or var d2js = require('d2js')
-d2js.D2I.init('file.d2i') // I18nFileAccessor
-d2js.D2P.init('file.d2o') // GameDataFileAccessor
-
-```
 ## Classes
 
 <dl>
@@ -309,16 +291,3 @@ Get all text
 | key | <code>string</code> | 
 | filter | <code>function</code> | 
 
-## License
-
-MIT © [Snapiz]()
-
-
-[npm-image]: https://badge.fury.io/js/d2js.svg
-[npm-url]: https://npmjs.org/package/d2js
-[travis-image]: https://travis-ci.org/Snapizz/d2js.svg?branch=master
-[travis-url]: https://travis-ci.org/Snapizz/d2js
-[daviddm-image]: https://david-dm.org/Snapizz/d2js.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Snapizz/d2js
-[coveralls-image]: https://coveralls.io/repos/github/Snapizz/d2js/badge.svg
-[coveralls-url]: https://coveralls.io/github/Snapizz/d2js
