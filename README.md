@@ -42,41 +42,11 @@ var d2Js = require('d2js');
 
 ## Functions
 
-<dl>
-<dt><a href="#read">read(data)</a></dt>
-<dd></dd>
-<dt><a href="#addField">addField(classname)</a></dt>
-<dd></dd>
-<dt><a href="#readType">readType(data)</a></dt>
-<dd><p>Read field type</p>
-</dd>
-<dt><a href="#getReadMethod">getReadMethod(type, data)</a> ⇒ <code>function</code></dt>
-<dd><p>Get read method</p>
-</dd>
-<dt><a href="#readVector">readVector(data, type)</a></dt>
-<dd></dd>
-<dt><a href="#readObject">readObject(data)</a></dt>
-<dd></dd>
-<dt><a href="#readInteger">readInteger(data)</a></dt>
-<dd></dd>
-<dt><a href="#readBoolean">readBoolean(data)</a></dt>
-<dd></dd>
-<dt><a href="#readString">readString(data)</a></dt>
-<dd></dd>
-<dt><a href="#readNumber">readNumber(data)</a></dt>
-<dd></dd>
-<dt><a href="#readI18n">readI18n(data)</a></dt>
-<dd></dd>
-<dt><a href="#readUnsignedInteger">readUnsignedInteger(data)</a></dt>
-<dd></dd>
 <dt><a href="#init">init(filename)</a></dt>
 <dd><p>Initialize data from file</p>
 </dd>
 <dt><a href="#initFromIDataInput">initFromIDataInput(data)</a></dt>
 <dd><p>Initialize data from ByteArray</p>
-</dd>
-<dt><a href="#getClassDefinition">getClassDefinition(idx)</a> ⇒</dt>
-<dd><p>Get class definistion</p>
 </dd>
 <dt><a href="#getObject">getObject(index)</a> ⇒ <code>object</code></dt>
 <dd><p>Get object by index</p>
@@ -87,14 +57,8 @@ var d2Js = require('d2js');
 <dt><a href="#map">map(cb)</a> ⇒ <code>Array</code></dt>
 <dd><p>map item from getObjects</p>
 </dd>
-<dt><a href="#readClassDefinition">readClassDefinition(idx, data)</a></dt>
-<dd><p>Read class definition from data</p>
-</dd>
 <dt><a href="#init">init()</a></dt>
 <dd><p>Initalize I18nFileAccessor and read file</p>
-</dd>
-<dt><a href="#overrideId">overrideId()</a></dt>
-<dd><p>Override id</p>
 </dd>
 <dt><a href="#getOrderIndex">getOrderIndex(idx1)</a> ⇒ <code>number</code></dt>
 <dd><p>Get order index</p>
@@ -154,136 +118,6 @@ Getter for counter
 
 **Kind**: global variable  
 **Read only**: true  
-<a name="GameDataTypeEnum"></a>
-
-## GameDataTypeEnum : <code>enum</code>
-**Kind**: global constant  
-**Properties**
-
-| Name | Type | Default |
-| --- | --- | --- |
-| INT | <code>number</code> | <code>-1</code> | 
-| BOOLEAN | <code>number</code> | <code>-2</code> | 
-| STRING | <code>number</code> | <code>-3</code> | 
-| NUMBER | <code>number</code> | <code>-4</code> | 
-| I18N | <code>number</code> | <code>-5</code> | 
-| UINT | <code>number</code> | <code>-6</code> | 
-| VECTOR | <code>number</code> | <code>-99</code> | 
-
-<a name="read"></a>
-
-## read(data)
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| data | <code>ByteArray</code> | 
-
-<a name="addField"></a>
-
-## addField(classname)
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| classname | <code>string</code> | 
-
-<a name="readType"></a>
-
-## readType(data)
-Read field type
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| data | <code>ByteArray</code> | 
-
-<a name="getReadMethod"></a>
-
-## getReadMethod(type, data) ⇒ <code>function</code>
-Get read method
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| type | <code>number</code> | 
-| data | <code>ByteArray</code> | 
-
-<a name="readVector"></a>
-
-## readVector(data, type)
-**Kind**: global function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| data | <code>ByteArray</code> |  |  |
-| type | <code>number</code> | <code>0</code> | return {object} |
-
-<a name="readObject"></a>
-
-## readObject(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
-<a name="readInteger"></a>
-
-## readInteger(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
-<a name="readBoolean"></a>
-
-## readBoolean(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
-<a name="readString"></a>
-
-## readString(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
-<a name="readNumber"></a>
-
-## readNumber(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
-<a name="readI18n"></a>
-
-## readI18n(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
-<a name="readUnsignedInteger"></a>
-
-## readUnsignedInteger(data)
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>ByteArray</code> | return {object} |
-
 <a name="init"></a>
 
 ## init(filename)
@@ -353,28 +187,10 @@ map item from getObjects
 | --- | --- |
 | cb | <code>function</code> | 
 
-<a name="readClassDefinition"></a>
-
-## readClassDefinition(idx, data)
-Read class definition from data
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| idx | <code>number</code> | 
-| data | <code>bytearray2</code> | 
-
 <a name="init"></a>
 
 ## init()
 Initalize I18nFileAccessor and read file
-
-**Kind**: global function  
-<a name="overrideId"></a>
-
-## overrideId()
-Override id
 
 **Kind**: global function  
 <a name="getOrderIndex"></a>
