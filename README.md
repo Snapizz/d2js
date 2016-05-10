@@ -10,10 +10,12 @@ $ npm install --save d2js
 ## Usage
 
 ```js
-import {D2I, D2P} from 'd2js'
-// or var d2js = require('d2js')
-d2js.D2I.init('file.d2i') // I18nFileAccessor
-d2js.D2P.init('file.d2o') // GameDataFileAccessor
+var d2js = require('d2js') // :: es5
+// or import {D2I, D2P} from 'd2js' :: es6
+d2js.D2I.register({key: 'file1', path: 'file1.d2i'}, {key: 'file2', path: 'file2.d2i'} [,...]) // I18nFileAccessor
+d2js.D2P.register({key: 'file1', path: 'file1.d2o'}, {key: 'file2', path: 'file2.d2o'} [,...]) // GameDataFileAccessor
+
+console.log(D2P.getObjects('file1', null, 5)); // display objects limit 5
 
 ```
 ## Classes
