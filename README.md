@@ -20,69 +20,6 @@ var d2Js = require('d2js');
 <dd></dd>
 </dl>
 
-## Members
-
-<dl>
-<dt><a href="#name">name</a></dt>
-<dd></dd>
-<dt><a href="#counter">counter</a></dt>
-<dd><p>Getter for counter</p>
-</dd>
-</dl>
-
-## Constants
-
-<dl>
-<dt><a href="#GameDataTypeEnum">GameDataTypeEnum</a> : <code>enum</code></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dt><a href="#init">init(filename)</a></dt>
-<dd><p>Initialize data from file</p>
-</dd>
-<dt><a href="#initFromIDataInput">initFromIDataInput(data)</a></dt>
-<dd><p>Initialize data from ByteArray</p>
-</dd>
-<dt><a href="#getObject">getObject(index)</a> ⇒ <code>object</code></dt>
-<dd><p>Get object by index</p>
-</dd>
-<dt><a href="#getObjects">getObjects(filter, [limit], map)</a> ⇒ <code>Array</code></dt>
-<dd><p>get objects from innerData</p>
-</dd>
-<dt><a href="#map">map(cb)</a> ⇒ <code>Array</code></dt>
-<dd><p>map item from getObjects</p>
-</dd>
-<dt><a href="#init">init()</a></dt>
-<dd><p>Initalize I18nFileAccessor and read file</p>
-</dd>
-<dt><a href="#getOrderIndex">getOrderIndex(idx1)</a> ⇒ <code>number</code></dt>
-<dd><p>Get order index</p>
-</dd>
-<dt><a href="#getText">getText(idx)</a> ⇒ <code>string</code></dt>
-<dd><p>Get text</p>
-</dd>
-<dt><a href="#getUnDiacriticalText">getUnDiacriticalText(idx)</a> ⇒ <code>string</code></dt>
-<dd><p>Get undiacritical text</p>
-</dd>
-<dt><a href="#hasText">hasText(idx)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Verify if text exist</p>
-</dd>
-<dt><a href="#getNamedText">getNamedText(key)</a> ⇒ <code>string</code></dt>
-<dd><p>Get named text</p>
-</dd>
-<dt><a href="#hasNamedText">hasNamedText(key)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Verify if named text exists</p>
-</dd>
-<dt><a href="#useDirectBuffer">useDirectBuffer(enableDirectBuffer)</a></dt>
-<dd><p>Use direct buff</p>
-</dd>
-<dt><a href="#getTexts">getTexts(filter)</a> ⇒ <code>Array</code></dt>
-<dd><p>Get all text</p>
-</dd>
-</dl>
-
 <a name="GameDataFileAccessor"></a>
 
 ## GameDataFileAccessor
