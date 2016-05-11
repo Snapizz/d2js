@@ -21,7 +21,7 @@ declare module "d2js/data" {
     getNamedText(key: string, name: string): string;
     hasNamedText(key: string, name: string): boolean;
     useDirectBuffer(key: string, value: boolean): void;
-    getTexts(key: string, f?: (e: any) => boolean, limit?: number);
+    getTexts(key: string, f?: (e: any) => boolean, limit?: number): any;
   }
   export const D2P: GameDataFileAccessor;
   export const D2I: I18nFileAccessor;
