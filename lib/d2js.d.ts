@@ -4,15 +4,14 @@ declare module "d2js" {
 
 declare module "d2js/data" {
   interface GameDataFileAccessor {
-    counter: number;
     register(...entries: {key: string, path: string}[]): void;
     getClassDefinition(key: string, idx: number): any;
-    getObject(key: string, idx: number): any;
-    getObjects(key: string, f?: (e: any) => boolean, limit?: number, m?: (e: any) => any): Array<any>;
-    map(key: string, m?: (e: any) => Array<any>): Array<any>;
+    getObject<T>(key: string, idx: number): T;
+    getObjects<T>(key: string, f?: (e: T) => boolean, limit?: number): T[];
+    map<T>(key: string, m: (e: any) => T): T[];
   }
   interface I18nFileAccessor {
-    register(...entries: {key: string, path: string}[]): void;
+    register(...entries: IEntry[]): void;
     overrideId(key: string, idx1: number, idx2: number): void;
     getOrderIndex(key: string, idx: number): number;
     getText(key: string, idx: number): string;
@@ -21,7 +20,15 @@ declare module "d2js/data" {
     getNamedText(key: string, name: string): string;
     hasNamedText(key: string, name: string): boolean;
     useDirectBuffer(key: string, value: boolean): void;
-    getTexts(key: string, f?: (e: any) => boolean, limit?: number): any;
+    getTexts(key: string, f?: (e: IText) => boolean, limit?: number): IText[];
+  }
+  interface IText {
+    id: number;
+    text: string;
+  }
+  interface IEntry {
+    key: string;
+    path: string;
   }
   export const D2P: GameDataFileAccessor;
   export const D2I: I18nFileAccessor;
