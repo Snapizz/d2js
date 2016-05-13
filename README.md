@@ -11,11 +11,11 @@ $ npm install --save d2js
 
 ```js
 var d2js = require('d2js') // :: es5
-// or import {D2I, D2P} from 'd2js' :: es6
+// or import {D2I, D2O} from 'd2js' :: es6
 d2js.D2I.register({key: 'file1', path: 'file1.d2i'}, {key: 'file2', path: 'file2.d2i'} [,...]) // I18nFileAccessor
-d2js.D2P.register({key: 'file1', path: 'file1.d2o'}, {key: 'file2', path: 'file2.d2o'} [,...]) // GameDataFileAccessor
+d2js.D2O.register({key: 'file1', path: 'file1.d2o'}, {key: 'file2', path: 'file2.d2o'} [,...]) // GameDataFileAccessor
 
-console.log(D2P.getObjects('file1', null, 5)); // display objects limit 5
+console.log(D2O.getObjects('file1', null, 5)); // display objects limit 5
 
 ```
 ## Classes
@@ -42,19 +42,19 @@ console.log(D2P.getObjects('file1', null, 5)); // display objects limit 5
 
 <dl>
 <dt><a href="#register">register()</a></dt>
-<dd><p>Register all d2p files</p>
+<dd><p>Register all d2o files</p>
 </dd>
 <dt><a href="#getClassDefinition">getClassDefinition(key, idx)</a> ⇒ <code>Object</code></dt>
 <dd><p>Get class definition by index</p>
 </dd>
 <dt><a href="#getlength">getlength(key)</a> ⇒ <code>number</code></dt>
-<dd><p>Get d2p items length</p>
+<dd><p>Get d2o items length</p>
 </dd>
 <dt><a href="#getObject">getObject(key, idx)</a> ⇒ <code>Object</code></dt>
 <dd><p>Get object by index</p>
 </dd>
 <dt><a href="#getObjects">getObjects(key, filter, [limit], map)</a> ⇒ <code>Array.&lt;Object&gt;</code></dt>
-<dd><p>Get objects from d2p file</p>
+<dd><p>Get objects from d2o file</p>
 </dd>
 <dt><a href="#map">map(key, cb)</a> ⇒ <code>Array.&lt;Object&gt;</code></dt>
 <dd><p>Mapping of objects as you wanted</p>
@@ -99,7 +99,7 @@ console.log(D2P.getObjects('file1', null, 5)); // display objects limit 5
 <a name="new_GameDataFileAccessor_new"></a>
 
 ### new GameDataFileAccessor()
-Allow user to read d2p files
+Allow user to read d2o files
 
 <a name="I18nFileAccessor"></a>
 
@@ -126,7 +126,7 @@ name setter
 <a name="register"></a>
 
 ## register()
-Register all d2p files
+Register all d2o files
 
 **Kind**: global function  
 <a name="getClassDefinition"></a>
@@ -144,7 +144,7 @@ Get class definition by index
 <a name="getlength"></a>
 
 ## getlength(key) ⇒ <code>number</code>
-Get d2p items length
+Get d2o items length
 
 **Kind**: global function  
 
@@ -167,7 +167,7 @@ Get object by index
 <a name="getObjects"></a>
 
 ## getObjects(key, filter, [limit], map) ⇒ <code>Array.&lt;Object&gt;</code>
-Get objects from d2p file
+Get objects from d2o file
 
 **Kind**: global function  
 
