@@ -30,6 +30,6 @@ declare module "d2js/data" {
     key: string;
     path: string;
   }
-  export const D2P: GameDataFileAccessor;
+  export const D2O: GameDataFileAccessor;
   export const D2I: I18nFileAccessor;
 }
